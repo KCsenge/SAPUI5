@@ -1,4 +1,4 @@
-specVersion: '2.6'
+specVersion: "2.6"
 metadata:
   name: sapui5
 type: application
@@ -10,3 +10,7 @@ framework:
     - name: sap.ui.core
     - name: sap.ui.table
     - name: themelib_sap_fiori_3
+# resources:
+#   configuration:
+#     paths:
+#       webapp: ./webapp
