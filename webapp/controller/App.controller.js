@@ -14,11 +14,11 @@ sap.ui.define(
         var sMsg = oBundle.getText("helloMsg", [sRecipient]);
         MessageToast.show(sMsg);
       },
-      onLiveChange: function (oEvent) {
+      onLiveChange: function () {
         var oBundle = this.getView().getModel("i18n").getResourceBundle();
-        var sName = oEvent.getSource().getValue();
+        var sName = this.getView().byId("nameInput").getValue();
         var sMsg = oBundle.getText("helloMsg", [sName]);
-        oEvent.getSource().setDescription(sMsg);
+        this.getView().byId("text").setText(sMsg);
       },
     });
   }
