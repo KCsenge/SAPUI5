@@ -18,7 +18,7 @@ sap.ui.define(
         var oBundle = this.getView().getModel("i18n").getResourceBundle();
         var sName = this.getView().byId("nameInput").getValue();
         var sMsg = oBundle.getText("helloMsg", [sName]);
-        this.getView().byId("text").setText(sMsg);
+        this.getView().byId("text").setHtmlText(sMsg);
       },
     });
   }

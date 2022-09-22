@@ -1,14 +1,14 @@
 <mvc:View controllerName="sap.ui.demo.walkthrough.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     <Shell backgroundColor="powderblue">
-        <App>
+        <App class="myAppDemoWT">
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
                         <Panel headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
                             <content>
-                                <Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="sapUiSmallMarginEnd" />
+                                <Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton" />
                                 <Input id="nameInput" value="{/recipient/name}" liveChange="onLiveChange" width="60%" />
-                                <Text id="text" class="sapUiSmallMargin" />
+                                <FormattedText id="text" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
                             </content>
                         </Panel>
                     </content>
