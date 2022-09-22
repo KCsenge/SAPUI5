@@ -1,4 +1,4 @@
 <mvc:View controllerName="sap.ui.demo.walkthrough.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
     <Button text="{i18n>showHelloButtonText}" press=".onShowHello" />
-    <Input id="nameInput" value="{/recipent/name}" liveChange="onLiveChange"  width="60%" />
+    <Input id="nameInput" value="{/recipient/name}" liveChange="onLiveChange" width="60%" />
 </mvc:View>
