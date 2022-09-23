@@ -1,5 +1,5 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-    <Dialog id="helloDialog" title="{path: '/recipient/name', formatter: '.formatter.formatHelloText'}">
+    <Dialog id="helloDialog" title="{=${i18n>helloMsg}.replace('{0}', ${/recipient/name})}">
         <content>
             <core:Icon src="sap-icon://hello-world" size="8rem" class="sapUiMediumMargin" />
         </content>

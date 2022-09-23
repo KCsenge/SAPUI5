@@ -1,14 +1,8 @@
 sap.ui.define(
-  [
-    "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast",
-    "../model/formatter",
-    "sap/ui/core/Fragment",
-  ],
-  function (Controller, MessageToast, formatter) {
+  ["sap/ui/core/mvc/Controller", "sap/m/MessageToast", "sap/ui/core/Fragment"],
+  function (Controller, MessageToast) {
     "use strict";
     return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
-      formatter: formatter,
       onShowHello: function () {
         var oBundle = this.getView().getModel("i18n").getResourceBundle();
         var sRecipient = this.getView()

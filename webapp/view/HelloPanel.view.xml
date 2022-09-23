@@ -4,7 +4,7 @@
             <Button id="helloDialogButton" icon="sap-icon://world" text="{i18n>openDialogButtonText}" press=".onOpenDialog" class="sapUiSmallMarginEnd" />
             <Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton" />
             <Input value="{/recipient/name}" valueLiveUpdate="true" width="60%" />
-            <Text text="{path: '/recipient/name', formatter: '.formatter.formatHelloText'}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+            <Text text="{=${i18n>helloMsg}.replace('{0}', ${/recipient/name})}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
         </content>
     </Panel>
 </mvc:View>
