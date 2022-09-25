@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "ui5 serve",
-    "build": "ui5 build"
+    "build": "ui5 build",
+    "proxy": "node proxy.js"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.0.0"
+    "@ui5/cli": "^2.0.0",
+    "cors-anywhere": "^0.4.4"
   },
   "dependencies": {
     "@openui5/sap.m": "^1",
