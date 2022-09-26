@@ -13,14 +13,7 @@ sap.ui.define(
         MessageToast.show(sMsg);
       },
       onOpenDialog: function () {
-        if (!this.pDialog) {
-          this.pDialog = this.loadFragment({
-            name: "sap.ui.demo.walkthrough.view.HelloDialog",
-          });
-          this.pDialog.then(function (oDialog) {
-            oDialog.open();
-          });
-        }
+        this.getOwnerComponent().openHelloDialog();
       },
       onCloseDialog: function () {
         this.byId("helloDialog").close();

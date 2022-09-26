@@ -41,6 +41,10 @@
         "sap.m": {}
       }
     },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
     "interfaces": ["sap.ui.core.IAsyncContentCreation"],
     "models": {
       "i18n": {
