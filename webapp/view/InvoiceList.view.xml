@@ -14,7 +14,7 @@
             </Toolbar>
         </headerToolbar>
         <columns>
-            <Column hAlign="End" minScreenWidth="Small" demandPopin="true" width="4em">
+            <Column hAlign="End" minScreenWidth="Small" demandPopin="true" width="6em">
                 <Text text="{i18n>columnQuantity}" />
             </Column>
             <Column>
