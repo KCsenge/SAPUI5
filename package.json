@@ -9,7 +9,7 @@
     "proxy": "node proxy.js"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.0.0",
+    "@ui5/cli": "^2.14.11",
     "cors-anywhere": "^0.4.4"
   },
   "dependencies": {
